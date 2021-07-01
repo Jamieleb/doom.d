@@ -35,8 +35,12 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type 'relative)
 
+;; Use 120 width fill column in all buffers
 (setq-default fill-column 120)
 (global-display-fill-column-indicator-mode t)
+
+;; Use fish as shell in vterm
+(setq-default explicit-shell-file-name "/usr/local/bin/fish")
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
