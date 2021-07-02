@@ -64,3 +64,7 @@
   (require 'tree-sitter-langs)
   (global-tree-sitter-mode)
   (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
+
+(map! :leader
+      :desc "Ivy Occur Next Item"
+      ">" #'ivy-occur-next-error)
